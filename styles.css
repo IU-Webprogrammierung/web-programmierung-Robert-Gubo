@@ -1,4 +1,6 @@
-*{
+*
+
+{
     margin: 0;
     padding: 0;
 }
@@ -9,22 +11,74 @@ body{
     height: 100%; 
 }
 nav{
-    height: 90px;
-    width: 100%;
-    background-color: white;
+   min-height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: white;
+    
 }
 nav ul{
-    float: right;
+    display: flex;
 }
-nav li{
-    display: inline-block; 
-    margin-top: 30px;
-    margin-right: 40px, 
+nav ul li{
+    height: 100%;
+    padding: 15px;
+    list-style-type: none;
 }
 nav li a{
-   font-family:Arial, Helvetica, sans-serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif
    font-size: 20px;
    color: #333333;
    text-decoration: none;
-   }
+    }
+nav ul li .active{
+    color: red
+}
    
+nav img{
+    height: 25px;
+    position: absolute; 
+    top: 20px; 
+    left: 20px; 
+    margin-left: 20px, 
+}
+.toggle-button{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+}
+@media(max-width:750px){
+    .list-container{
+        display: none;
+        width: 100%;}
+    .toggle-button{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list-container ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .list-container li{
+        text-align: center;
+    }
+    .list-container.active{
+        display: flex;
+
+    }
+    }
