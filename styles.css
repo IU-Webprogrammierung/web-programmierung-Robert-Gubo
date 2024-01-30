@@ -177,3 +177,34 @@ nav ul li a{
         display: flex;
     }
 }
+@media(max-width:500px){
+    .Ausnahme-H1{
+        font-family: 'Alternate', Arial, Helvetica;
+        font-size: 30px;
+        letter-spacing: -2px;
+        color: #56b918;
+        font-weight: 800;
+    }
+    .Ausnahme-H2{
+        font-family: 'Alternate', Arial, Helvetica;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #333333;
+    }
+    .Ausnahme-H3{
+        font-family: 'Alternate', Arial, Helvetica;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #333333;
+    }
+    .picture {
+        max-width: 150px;
+    
+    }
+    .container1 {
+
+        text-align: center;
+        padding: 10px;
+        
+    }
+}
