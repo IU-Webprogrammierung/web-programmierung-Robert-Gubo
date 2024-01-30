@@ -1,51 +1,66 @@
-*
-
-{
+*{
     margin: 0;
     padding: 0;
+    
 }
 html{
     height: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap');
 }
-body{
-    height: 100%; 
+@font-face {
+    font-family: 'Alternate';
+    src: url(/Alternate\ Gothic\ No2\ D\ Regular.ttf) format('ttf');
+} 
+
+header{
+    height: 100%;
+    background-color: white
 }
-nav{
-   min-height: 80px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   background-color: white;
+img{
+    max-width: 50%;
+    max-height: 50%;
+    top: 25px;
     
+}
+
+nav{
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+.nav_logo{
+    margin: 20px;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+    max-width: 23rem;
+
 }
 nav ul{
     display: flex;
 }
 nav ul li{
     height: 100%;
-    padding: 15px;
+    padding: 30px;
     list-style-type: none;
 }
-nav li a{
-   font-family: Verdana, Geneva, Tahoma, sans-serif
-   font-size: 20px;
-   color: #333333;
-   text-decoration: none;
-    }
-nav ul li .active{
-    color: red
+nav ul li:hover{
+    font-style:bold;
 }
-   
-nav img{
-    height: 25px;
-    position: absolute; 
-    top: 20px; 
-    left: 20px; 
-    margin-left: 20px, 
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Bebas Neue';
 }
 .toggle-button{
     position: absolute;
-    top: 20px;
+    align-items: center;
+    top: 25px;
     right: 25px;
     display: none;
     flex-direction: column;
@@ -54,15 +69,32 @@ nav img{
     height: 23px;
 }
 .toggle-button .bar{
-    height: 3px;
+    height: 4px;
     width: 100%;
-    background-color: black;
+    background: black;
     border-radius: 100px;
 }
-@media(max-width:750px){
+
+.parent{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+.container1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 40px;
+    
+}
+@media(max-width:900px){
     .list-container{
         display: none;
-        width: 100%;}
+        width: 100%;
+    }
     .toggle-button{
         display: flex;
     }
@@ -79,6 +111,5 @@ nav img{
     }
     .list-container.active{
         display: flex;
-
     }
-    }
+}
