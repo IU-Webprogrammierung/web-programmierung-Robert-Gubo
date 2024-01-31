@@ -3,15 +3,75 @@
     padding: 0;
     
 }
+@import url("https://p.typekit.net/p.css?s=1&k=oox6lwe&ht=tk&f=44884.44887.45271&a=138581071&app=typekit&e=css");
+
+@font-face {
+font-family:"alternate-gothic-atf";
+src:url("https://use.typekit.net/af/5ab2eb/00000000000000007735c741/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/5ab2eb/00000000000000007735c741/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/5ab2eb/00000000000000007735c741/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"alternate-gothic-atf";
+src:url("https://use.typekit.net/af/889bfc/00000000000000007735c752/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/889bfc/00000000000000007735c752/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/889bfc/00000000000000007735c752/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"alternate-gothic-atf-thin";
+src:url("https://use.typekit.net/af/8f3cca/00000000000000007735c744/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff2"),url("https://use.typekit.net/af/8f3cca/00000000000000007735c744/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("woff"),url("https://use.typekit.net/af/8f3cca/00000000000000007735c744/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:100;font-stretch:normal;
+}
+
+.tk-alternate-gothic-atf { font-family: "alternate-gothic-atf",sans-serif; }
+.tk-alternate-gothic-atf-thin { font-family: "alternate-gothic-atf-thin",sans-serif; }
+
+
 html{
     height: 100%;
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 }
-@font-face {
-    font-family: 'Alternate';
-    src: url(/Alternate\ Gothic\ No2\ D\ Regular.ttf) format('ttf');
-} 
+h1{
+    font-family: "alternate-gothic-atf", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-weight: 800;
+    background: linear-gradient(to right, #3D4CF4 0%, #ff2862 100%);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(to right, rgb(61, 76, 244) 0%, rgb(255, 40, 98) 100%);
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    font-style: normal;
+    margin: 20px;
+}
+.Zitat{
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25px;
+    letter-spacing: -1px;
+    color: #333333;
+    font-weight: 600;
+}
 
 header{
     height: 100%;
@@ -48,8 +108,8 @@ nav ul li{
     padding: 30px;
     list-style-type: none;
 }
-nav ul li:hover{
-    font-style:bold;
+nav ul li a:hover{
+    color:#95149e;
 }
 nav ul li a{
     color: black;
@@ -91,9 +151,11 @@ nav ul li a{
     
 }
 .Ausnahme-H1{
-    font-family: 'Alternate', Arial, Helvetica;
-    font-size: 50px;
-    letter-spacing: -4px;
+    font-family: "alternate-gothic-atf", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    letter-spacing: -2px;
     font-weight: 800;
     background: linear-gradient(to right, #3D4CF4 0%, #ff2862 100%);
     background-color: rgba(0, 0, 0, 0);
@@ -109,29 +171,46 @@ nav ul li a{
     -webkit-text-fill-color: transparent;
 }
 .Ausnahme-H2{
-    font-family: 'Alternate', Arial, Helvetica;
-    font-size: 30px;
-    letter-spacing: -2px;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: -1px;
     color: #333333;
+    font-weight: 600;
 }
 .Ausnahme-H3{
-    font-family: 'Alternate', Arial, Helvetica;
+    font-family: arial, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 20px;
     letter-spacing: 0px;
     color: #333333;
+    font-weight: 200;
 }
 
 .container2 {
 
     text-align: center;
+    padding-bottom: 40px;
 
 
 }
 .picture {
     max-width: 300px;
+    margin-bottom: 40px;
 
 }
+.picture2 {
+    max-height: 600px;
+    padding: 40px;
+    animation: einblenden 2s;
+}
 
+@keyframes einblenden {
+    from { opacity:0; }
+    to { opacity:1; }
+}
 
 .btn {
     background: linear-gradient(to right, #616df5 0%, #f6668c 100%);
@@ -144,15 +223,30 @@ nav ul li a{
     opacity: 1;
     transition: 0.3s;
     border-radius: 30px;
-    font: 'Alternate',Arial,;
-    font-weight: 800;
+    font-family: "alternate-gothic-atf", sans-serif;
+    font-weight: 600;
     cursor: pointer;
   }
   
   .btn:hover {
     opacity: 0.6;
 }
-  
+
+.content{
+    display: flex;
+    padding-inline-start: 20px;
+    background: linear-gradient(to right, #3b4aeb 0%, #9a2141 100%);
+}
+.headline{
+    font-family: "alternate-gothic-atf";
+    text-align: center;
+    
+}
+.headline1{
+    background: linear-gradient(to right, #3b4aeb 0%, #9a2141 100%);
+}
+
+
 
 @media(max-width:900px){
     .list-container{
@@ -177,34 +271,47 @@ nav ul li a{
         display: flex;
     }
 }
-@media(max-width:500px){
+@media(max-width:550px){
     .Ausnahme-H1{
-        font-family: 'Alternate', Arial, Helvetica;
-        font-size: 30px;
-        letter-spacing: -2px;
+        font-family: "alternate-gothic-atf", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        letter-spacing: 0px;
         color: #56b918;
         font-weight: 800;
     }
     .Ausnahme-H2{
-        font-family: 'Alternate', Arial, Helvetica;
-        font-size: 20px;
+        font-family: arial, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 23px;
         letter-spacing: 0px;
         color: #333333;
     }
     .Ausnahme-H3{
-        font-family: 'Alternate', Arial, Helvetica;
-        font-size: 15px;
+        font-family: arial, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
         letter-spacing: 1px;
         color: #333333;
     }
     .picture {
-        max-width: 150px;
+        max-width: 200px;
     
     }
     .container1 {
 
         text-align: center;
-        padding: 10px;
+        padding: 20px;
         
     }
+    .parent{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px;
 }
