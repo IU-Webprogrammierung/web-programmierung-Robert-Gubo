@@ -33,6 +33,7 @@ html{
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 }
+
 h1{
     font-family: "alternate-gothic-atf", sans-serif;
     text-align: center;
@@ -55,13 +56,42 @@ h1{
     -webkit-text-fill-color: transparent;
 
 }
-p{
+h2{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 18px;
     color: #000000;
     font-style: normal;
     margin: 20px;
+}
+h3{
+    font-family: "alternate-gothic-atf", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-weight: 800;
+    color: #ffffff;
+
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    font-style: normal;
+    margin: 60px;
+}
+p-2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-style: normal;
+    margin: 60px;
 }
 .Zitat{
     font-family: arial, sans-serif;
@@ -226,6 +256,7 @@ nav ul li a{
     font-family: "alternate-gothic-atf", sans-serif;
     font-weight: 600;
     cursor: pointer;
+    align-items: center;;
   }
   
   .btn:hover {
@@ -246,7 +277,62 @@ nav ul li a{
     background: linear-gradient(to right, #3b4aeb 0%, #9a2141 100%);
 }
 
+.uebermich{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #3b4aeb 0%, #9a2141 100%);
+}
+.uebermich-child1{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+}
+.uebermich-child2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.Kontaktformular {
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.Kontaktformular label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.Kontaktformular input[type="text"],
+.Kontaktformular textarea {
+    width: 600px; /* Standardbreite */
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #e0f0ff;
+    color: #000000;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.Kontaktformular input[type="text"]:focus,
+.Kontaktformular textarea:focus {
+    outline: none;
+    border: 2px solid black;
+}
+
+.Kontaktformular .btn {
+    width: auto;
+}
 
 @media(max-width:900px){
     .list-container{
@@ -270,7 +356,37 @@ nav ul li a{
     .list-container.active{
         display: flex;
     }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        font-style: normal;
+        margin: 40px;
+
+    }
+    .Ausnahme-H1{
+        font-family: "alternate-gothic-atf", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 35px;
+        letter-spacing: 0px;
+        color: #56b918;
+        font-weight: 800;
+        margin: 20px;
+    }
+    .Kontaktformular input[type="text"],
+    .Kontaktformular textarea {
+        width: 400px;
+        max-width: 900px; /* Entfernen der maximalen Breite */
+    }
+
+    .Kontaktformular label {
+        font-size: 14px;
+    }
 }
+
 @media(max-width:550px){
     .Ausnahme-H1{
         font-family: "alternate-gothic-atf", sans-serif;
@@ -280,6 +396,7 @@ nav ul li a{
         letter-spacing: 0px;
         color: #56b918;
         font-weight: 800;
+        margin: 20px;
     }
     .Ausnahme-H2{
         font-family: arial, sans-serif;
@@ -314,4 +431,20 @@ nav ul li a{
         justify-content: center;
         flex-wrap: wrap;
         margin: 15px;
-}
+    }
+    p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    font-style: normal;
+    margin: 20px;
+    }
+    .Kontaktformular input[type="text"],
+    .Kontaktformular textarea {
+        max-width: 300px; /* Entfernen der maximalen Breite */
+    }
+    .Kontaktformular label {
+        font-size: 12px;
+    }

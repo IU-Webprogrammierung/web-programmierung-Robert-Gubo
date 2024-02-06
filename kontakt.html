@@ -26,3 +26,21 @@
         </div>
     </nav>
  </header>
+<body>
+    <h1>Kontakt<br><br></h1>
+    <div class="Kontaktformular">    
+        <form id="contactForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="mailadress">E-Mail-Adresse:</label><br>
+            <input type="text" id="mailadress" name="mailadress" required><br>
+            <label for="subject">Betreff:</label><br>
+            <input type="text" id="subject" name="subject" required><br>
+            <label for="message">Nachricht:</label><br>
+            <textarea id="message" name="message" rows="7" required style="resize: none;" required></textarea><br><br>
+            <input type="button" value="Senden" class="btn" onclick="sendEmail()">
+        </form>
+    </div>
+    
+
+</body>
