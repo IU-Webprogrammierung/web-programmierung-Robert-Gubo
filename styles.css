@@ -304,6 +304,13 @@ nav ul li a{
     justify-content: center;
     margin: 20px;
 }
+.zitat {
+    font-style: italic;
+}
+.zitat2{
+    font-style: normal;
+    font-size: 14px;
+}
 .Kontaktformular {
     font-family: Arial, sans-serif;
     font-size: 16pt;
@@ -340,6 +347,9 @@ nav ul li a{
 .Kontaktformular .btn {
     width: auto;
 }
+
+/* Portfolio */
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -352,7 +362,7 @@ nav ul li a{
   .portfolio-item {
     width: calc(50% - 50px); /* 50% Breite mit 50px Abstand */
     margin-bottom: 50px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: relative;
     display: flex;
     flex-direction: column; /* Anpassung für die vertikale Anordnung */
@@ -372,10 +382,88 @@ nav ul li a{
   }
   .portfolio-text {
     color: black;
-    font-size: 14px;
-    text-align: left; /* Links ausrichten */
-    margin-left: -180px; /* Zusätzlicher Abstand links */
+    font-size: 24px;
+    text-align: center;
+    font-family: "alternate-gothic-atf", sans-serif;
+   
 }
+/* Skills */
+   
+.skill {
+    width: calc(100% - 40px);
+    margin: 20px auto;
+    padding-bottom: 30px;
+    overflow: auto;
+  }
+  
+  .kompetenz {
+    font-family: 'Alternate-gothic-atf', Arial, Helvetica, sans-serif; 
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .skill-bar {
+    width: calc(100% - 40px);
+    margin: 20px;
+    background-color: #ebebeb;
+    height: 10px;
+    position: relative;
+  }
+  
+  .balken1 {
+    height: 10px;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(to right, rgb(241, 52, 255) 60%, #ffffff 60%); 
+  }
+  
+  .balken2 {
+    height: 10px;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(to right,  rgb(241, 52, 255) 90%, #ffffff 90%);
+  }
+  
+  .balken3 {
+    height: 10px;
+    position: relative;
+    z-index: 10;
+    background: linear-gradient(to right,  rgb(241, 52, 255) 30%, #ffffff 30%); 
+  }
+  .bunder, .bunder1, .bunder2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -10px;
+  }
+  
+  .bunder span, .bunder1 span, .bunder2 span {
+    color: #ffffff;
+    font-family: 'Alternate-gothic-atf', Arial, Helvetica, sans-serif; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bunder {
+    background-color:  rgb(241, 52, 255);
+    margin-left: calc(30% - 15px);
+  }
+  
+  .bunder1 {
+    background-color:  rgb(241, 52, 255);
+    margin-left: calc(60% - 15px); 
+  }
+  
+  .bunder2 {
+    background-color:  rgb(241, 52, 255);
+    margin-left: calc(90% - 15px); 
+  }
 
   
 @media(max-width:900px){
@@ -423,24 +511,47 @@ nav ul li a{
     .Kontaktformular input[type="text"],
     .Kontaktformular textarea {
         width: 400px;
-        max-width: 900px; /* Entfernen der maximalen Breite */
+        max-width: 900px;
     }
 
     .Kontaktformular label {
         font-size: 14px;
     }
+
+    /* Portfolio */
+
     .portfolio-item {
         margin: 20px;
       }
-      .portfolio-text {
+    .portfolio-text {
         color: black;
-        font-size: 14px;
-        text-align: left; /* Links ausrichten */
-        margin-left: -180px; /* Zusätzlicher Abstand links */
+        font-size: 18px;
+        text-align: center; 
+        margin: 20px;
     }
 
-}
-
+    /* Skills */
+    .kompetenz {
+        font-size: 16px;
+      }
+      
+      .bunder, .bunder1, .bunder2 {
+        width: 30px;
+        height: 30px;
+        margin-top: -8px;
+        position: absolute;
+         margin-top: -10px;
+      }
+      
+      .bunder span, .bunder1 span, .bunder2 span {
+      font-size: 15px; 
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+    }
+    }
+   
 @media(max-width:550px){
     .Ausnahme-H1{
         font-family: "alternate-gothic-atf", sans-serif;
@@ -502,14 +613,35 @@ nav ul li a{
     .Kontaktformular label {
         font-size: 12px;
     }
+
+    /* Portfolio */
     .portfolio-item {
         width: calc(100% - 20px);
         margin: 20px;
       }
       .portfolio-text {
         color: black;
-        font-size: 14px;
+        font-size: 24px;
         text-align: center;
         margin-left: 20px;
     }
- 
+    /* Skills */
+     .kompetenz {
+       font-size: 18px;
+     }
+  
+     .bunder, .bunder1, .bunder2 {
+       width: 30px;
+       height: 30px;
+       margin-top: -8px;
+      position: absolute;
+       margin-top: -10px;
+     }
+  
+     .bunder span, .bunder1 span, .bunder2 span {
+     font-size: 18px; 
+     position: absolute;
+     top: 50%; 
+     left: 50%; 
+     transform: translate(-50%, -50%);
+    }
