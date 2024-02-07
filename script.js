@@ -1,9 +1,13 @@
+// Navi
+
 const toggleButton = document.getElementsByClassName("toggle-button")[0]
 const listContainer = document.getElementsByClassName("list-container")[0]
 
 toggleButton.addEventListener("click", () =>{
     listContainer.classList.toggle("active")
 })
+
+// Top Button
 
 window.onscroll = function() {scrollFunction()};
 
@@ -19,6 +23,8 @@ window.onscroll = function() {scrollFunction()};
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
+
+        // Slideshow Funfacts
 
         let slideIndex = 0;
         const slides = document.querySelectorAll('.slide');
