@@ -7,22 +7,24 @@ toggleButton.addEventListener("click", () =>{
     listContainer.classList.toggle("active")
 })
 
+
 // Top Button
+// Funktion, um den Top Button nach oben zu scrollen
+function topFunction() {
+    // Scrollen zur oberen Position der Seite mit Animation
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
-window.onscroll = function() {scrollFunction()};
+// Event-Listener, um den Button zu fixieren
+window.addEventListener("scroll", function() {
+    var topBtn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 || window.scrollY > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+});
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("topBtn").style.display = "block";
-            } else {
-                document.getElementById("topBtn").style.display = "none";
-            }
-        }
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
 
         // Slideshow Funfacts
 

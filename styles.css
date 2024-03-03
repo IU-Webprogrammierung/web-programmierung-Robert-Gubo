@@ -53,6 +53,7 @@ h1{
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 50px;
 
 }
 h2{
@@ -265,14 +266,15 @@ nav ul li a{
     font-family: "alternate-gothic-atf", sans-serif;
     font-weight: 600;
     cursor: pointer;
-    align-items: center;;
-  }
+    align-items: center;
+}
+
   
   .btn:hover {
     opacity: 0.6;
 }
 
-.content{
+.skills-bereich{
     display: flex;
     padding-inline-start: 20px;
     background: linear-gradient(to right, #3b4aeb 0%, #9a2141 100%);
@@ -411,7 +413,7 @@ nav ul li a{
   }
   
   .skill-bar {
-    width: calc(100% - 40px);
+    width: calc(100% - 60px);
     margin: 20px;
     background-color: #ebebeb;
     height: 10px;
@@ -548,7 +550,7 @@ nav ul li a{
     color: white;
 }
 /* Jeder Kontkat startet mit einem Hallo */
-.contact-box {
+footer.contact-box {
     height: 300px;
     background-color: rgb(67, 8, 83);
     display: flex;
@@ -622,6 +624,9 @@ nav ul li a{
         font-style: normal;
         margin: 40px;
 
+    }
+    h1{
+        padding-bottom: 30px;
     }
     .Ausnahme-H1{
         font-family: "alternate-gothic-atf", sans-serif;
@@ -710,6 +715,9 @@ nav ul li a{
         font-size: 18px;
         letter-spacing: 1px;
         color: #333333;
+    }
+    h1{
+        padding-bottom: 30px;
     }
     .picture {
         max-width: 200px;
