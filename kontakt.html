@@ -5,44 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROBERT GUBO - Portfolio</title>
     <link rel="stylesheet" href="/styles.css">
-    <script type="text/javascript" src="script.js" defer></script>
     <link rel="icon" type="image/png" href="/Bilder/favicon.png">
-
+    <style>
+        /* Definieren Sie die Farbe im CSS */
+        .kontakt-link {
+            color: #95149e;
+        }
+    </style>
 </head>
-<header>
-    <nav>
-        <div class="nav_logo"><img src="Bilder/Logo.png"></div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="list-container">
-        <ul> 
-            <li><a href="/index.html">Start</a></li>
-            <li><a href="/uebermich.html">Über mich</a></li>
-            <li><a href="/projekte.html">Projekte</a></li>
-            <li><a href="/kontakt.html"><font color=#95149e>Kontakt</font></a></li>
-        </ul>
-        </div>
-    </nav>
- </header>
 <body>
-    <h1>Kontakt</h1>
-    <div class="Kontaktformular">    
+    <header>
+        <nav>
+            <div class="nav_logo"><img src="Bilder/Logo.png"></div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="list-container">
+                <ul> 
+                    <li><a href="/index.html">Start</a></li>
+                    <li><a href="/uebermich.html">Über mich</a></li>
+                    <li><a href="/projekte.html">Projekte</a></li>
+                    <li><a href="/kontakt.html" class="aktiverlinknav">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Kontakt</h1>
+    </header>
+    <section class="Kontaktformular">    
         <form id="contactForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name">
             <label for="mailadress">E-Mail-Adresse:</label>
-            <input type="text" id="mailadress" name="mailadress" required>
+            <input type="text" id="mailadress" name="mailadress">
             <label for="subject">Betreff:</label>
-            <input type="text" id="subject" name="subject" required>
+            <input type="text" id="subject" name="subject">
             <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" rows="7" required style="resize: none;" required></textarea>
+            <textarea id="message" name="message" rows="7" style="resize: none;"></textarea>
             <input type="button" value="Senden" class="btn" onclick="sendEmail()">
         </form>
-    </div>
-    <div class="social-media-box">
+    </section>
+    <section class="social-media-box">
         <h3>Social Media</h3>
         <div class="social-media-container">
             <div class="social-media-item">
@@ -56,7 +60,9 @@
                 </a>
             </div>
         </div>
-    </div>
+    </section>
     <button onclick="topFunction()" id="topBtn">TOP</button>
-    
+
+    <script type="text/javascript" src="script.js" defer></script>
 </body>
+</html>
