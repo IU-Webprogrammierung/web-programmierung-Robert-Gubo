@@ -53,7 +53,7 @@ h1{
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 50px;
+    padding: 30px;
 
 }
 h2{
@@ -73,6 +73,7 @@ h3{
     letter-spacing: -2px;
     font-weight: 800;
     color: #ffffff;
+    padding: 30px;
 
 }
 p{
@@ -84,7 +85,7 @@ p{
     font-style: normal;
     margin: 60px;
 }
-p-2{
+.Zitattext2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -93,13 +94,15 @@ p-2{
     font-style: normal;
     margin: 60px;
 }
-p-3{
+
+.Zitattext3 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     color: #ffffff;
     font-style: normal;
     margin-top: 20px;
 }
+
 .Zitat{
     font-family: arial, sans-serif;
     font-weight: 700;
@@ -208,6 +211,7 @@ nav ul li a{
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 20px;
 }
 .Ausnahme-H2{
     font-family: arial, sans-serif;
@@ -217,6 +221,7 @@ nav ul li a{
     letter-spacing: -1px;
     color: #333333;
     font-weight: 600;
+    padding-bottom: 20px;
 }
 .Ausnahme-H3{
     font-family: arial, sans-serif;
@@ -226,6 +231,7 @@ nav ul li a{
     letter-spacing: 0px;
     color: #333333;
     font-weight: 200;
+    padding-bottom: 30px;
 }
 
 .container2 {
@@ -317,6 +323,12 @@ nav ul li a{
 }
 
 /* Konktaktformular */
+.Kontaktformular label,
+.Kontaktformular input,
+.Kontaktformular textarea {
+    display: block;
+    margin-bottom: 10px;
+}
 
 .Kontaktformular {
     font-family: Arial, sans-serif;
@@ -324,6 +336,7 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .Kontaktformular label {
@@ -566,7 +579,7 @@ footer.contact-box {
 /* Social Media */
 .social-media-box {
     background-color: black;
-    padding: 30px;
+    padding: 20px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -580,6 +593,7 @@ footer.contact-box {
     justify-content: center;
     align-items: center;
     margin: 0px;
+    padding-top: 40px;
 }
 
 .social-media-item {
@@ -628,6 +642,7 @@ footer.contact-box {
     h1{
         padding-bottom: 30px;
     }
+
     .Ausnahme-H1{
         font-family: "alternate-gothic-atf", sans-serif;
         font-weight: 700;
@@ -646,6 +661,9 @@ footer.contact-box {
 
     .Kontaktformular label {
         font-size: 14px;
+    }
+    .social-media-container {
+        padding: 50px;
     }
 
     /* Portfolio */
@@ -788,7 +806,7 @@ footer.contact-box {
 
 /* Social Media */
 .social-media-box {
-    padding: 30px;
+    padding: 70px;
     height: 550px;
 
 }
