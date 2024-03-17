@@ -685,6 +685,7 @@ footer.contact-box {
     .social-media-container {
         padding: 50px;
     }
+}
 
     /* Portfolio */
 
@@ -724,7 +725,6 @@ footer.contact-box {
         height: 400px;
     }
 
-    }
 
    
 @media(max-width:550px){
@@ -791,6 +791,7 @@ footer.contact-box {
     .Kontaktformular label {
         font-size: 12px;
     }
+}
 
     /* Portfolio */
     .portfolio-item {
