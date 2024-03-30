@@ -390,7 +390,7 @@ nav ul li a{
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -693,7 +693,7 @@ footer.contact-box {
 
     .portfolio {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(, 1fr);
       }
     .portfolio-item {
         margin: 20px;
@@ -804,7 +804,6 @@ footer.contact-box {
         grid-template-columns: repeat(2, 1fr);
 }
 .portfolio-item {
-        width: calc(100% - 40px);
         margin: 20px;
 }
 .portfolio-text {

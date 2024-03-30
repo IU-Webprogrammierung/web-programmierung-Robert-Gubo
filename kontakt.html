@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROBERT GUBO - Portfolio</title>
     <link rel="stylesheet" href="/styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" href="/Bilder/favicon.png">
-    <style>
-        .kontakt-link {
-            color: #95149e;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -29,11 +26,11 @@
                     <li><a href="/kontakt.html" class="aktiverlinknav">Kontakt</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>    
         <h1>Kontakt</h1>
     </header>
     <section class="Kontaktformular">    
-        <form id="contactForm">
+        <form action="mailto:nik-robert.gubo@iubh-fernstudium.de" method="post" enctype="text/plain">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
             <label for="mailadress">E-Mail-Adresse:</label>
@@ -42,9 +39,10 @@
             <input type="text" id="subject" name="subject">
             <label for="message">Nachricht:</label>
             <textarea id="message" name="message" rows="7" style="resize: none;"></textarea>
-            <input type="button" value="Senden" class="btn" onclick="sendEmail()">
+            <input type="submit" value="Senden" class="btn">
         </form>
     </section>
+    
     <section class="social-media-box">
         <h3>Social Media</h3>
         <div class="social-media-container">

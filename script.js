@@ -9,8 +9,8 @@ toggleButton.addEventListener("click", () => {
 
 // Funktion, um Top Button nach oben zu scrollen
 function topFunction() {
-    // Scrollen zur oberen Position der Seite mit Animation
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+// Scrollen zur oberen Position der Seite mit Animation
+window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // TopFunktion aktivieren
@@ -47,3 +47,7 @@ function nextSlide() {
 }
 
 showSlide(slideIndex);
+
+document.getElementById('prevButton').addEventListener('click', prevSlide);
+document.getElementById('nextButton').addEventListener('click', nextSlide);
+
